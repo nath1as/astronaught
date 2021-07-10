@@ -6,12 +6,20 @@ M.config = function()
     ts_config.setup {
         ensure_installed = {
             "javascript",
+            "typescript",
+            "tsx",
             "html",
             "css",
             "bash",
             "lua",
             "json",
-            "python"
+            "python",
+            "ruby",
+            "haskell",
+            "c",
+            "regex",
+            "latex",
+            "nix"
         },
         highlight = {
             enable = true,
