@@ -101,20 +101,6 @@ return packer.startup(
             end
         }
 
-        use {
-            "nvim-telescope/telescope.nvim",
-            requires = {
-                {"nvim-lua/popup.nvim"},
-                {"nvim-lua/plenary.nvim"},
-                {"nvim-telescope/telescope-fzf-native.nvim", run = "make"},
-                {"nvim-telescope/telescope-media-files.nvim"}
-            },
-            cmd = "Telescope",
-            config = function()
-                require("plugins.telescope").config()
-            end
-        }
-
         -- git stuff
         use {
             "lewis6991/gitsigns.nvim",
