@@ -1,7 +1,7 @@
 local M = {}
 
 M.config = function()
-    local global_theme = "themes/" .. vim.g.nvchad_theme
+    local global_theme = "themes/" .. vim.g.nths_theme
     local colors = require(global_theme)
 
     require "nvim-web-devicons".setup {

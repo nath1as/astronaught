@@ -9,7 +9,7 @@ g.auto_save = false
 
 -- colorscheme related stuff
 
-g.nvchad_theme = "onedark"
+g.nths_theme = "nths"
 local base16 = require "base16"
 base16(base16.themes["onedark"], true)
 
