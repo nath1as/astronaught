@@ -16,8 +16,6 @@ return packer.startup(
     function()
         use "wbthomason/packer.nvim"
 
-        use "akinsho/nvim-bufferline.lua"
-
         use {
             "glepnir/galaxyline.nvim",
             config = function()
@@ -167,31 +165,12 @@ return packer.startup(
 
         use {"tweekmonster/startuptime.vim", cmd = "StartupTime"}
 
-        -- load autosave only if its globally enabled
-        use {
-            "Pocco81/AutoSave.nvim",
-            config = function()
-                require("plugins.zenmode").autoSave()
-            end,
-            cond = function()
-                return vim.g.auto_save == true
-            end
-        }
-
         -- smooth scroll
         use {
             "karb94/neoscroll.nvim",
             event = "WinScrolled",
             config = function()
                 require("neoscroll").setup()
-            end
-        }
-
-        use {
-            "Pocco81/TrueZen.nvim",
-            cmd = {"TZAtaraxis", "TZMinimalist", "TZFocus"},
-            config = function()
-                require("plugins.zenmode").config()
             end
         }
 
