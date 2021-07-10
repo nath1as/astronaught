@@ -149,20 +149,6 @@ return packer.startup(
             end
         }
 
-        use {
-            "glepnir/dashboard-nvim",
-            cmd = {
-                "Dashboard",
-                "DashboardNewFile",
-                "DashboardJumpMarks",
-                "SessionLoad",
-                "SessionSave"
-            },
-            setup = function()
-                require("plugins.dashboard").config()
-            end
-        }
-
         use {"tweekmonster/startuptime.vim", cmd = "StartupTime"}
 
         -- smooth scroll
@@ -174,7 +160,7 @@ return packer.startup(
             end
         }
 
-        --   use "alvan/vim-closetag" -- for html autoclosing tag
+        use "alvan/vim-closetag"
 
         use {
             "lukas-reineke/indent-blankline.nvim",
