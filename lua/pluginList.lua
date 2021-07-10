@@ -101,6 +101,8 @@ return packer.startup(
             end
         }
 
+        use "nvim-lua/plenary.nvim"
+
         -- git stuff
         use {
             "lewis6991/gitsigns.nvim",
