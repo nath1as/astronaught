@@ -8,34 +8,8 @@ end
 
 local opt = {}
 
--- dont copy any deleted text , this is disabled by default so uncomment the below mappings if you want them
---[[ remove this line
-
-map("n", "dd", [=[ "_dd ]=], opt)
-map("v", "dd", [=[ "_dd ]=], opt)
-map("v", "x", [=[ "_x ]=], opt)
-
- this line too ]]
---
-
--- OPEN TERMINALS --
-map("n", "<C-l>", [[<Cmd>vnew term://bash <CR>]], opt) -- term over right
-map("n", "<C-x>", [[<Cmd> split term://bash | resize 10 <CR>]], opt) --  term bottom
-map("n", "<C-t>t", [[<Cmd> tabnew | term <CR>]], opt) -- term newtab
-
 -- copy whole file content
 map("n", "<C-a>", [[ <Cmd> %y+<CR>]], opt)
-
--- toggle numbers
-map("n", "<leader>n", [[ <Cmd> set nu!<CR>]], opt)
-
--- Truezen.nvim
-map("n", "<leader>zz", ":TZAtaraxis<CR>", opt)
-map("n", "<leader>zm", ":TZMinimalist<CR>", opt)
-map("n", "<leader>zf", ":TZFocus<CR>", opt)
-
-map("n", "<C-s>", ":w <CR>", opt)
--- vim.cmd("inoremap jh <Esc>")
 
 -- Commenter Keybinding
 map("n", "<leader>/", ":CommentToggle<CR>", opt)
