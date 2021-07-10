@@ -35,6 +35,8 @@ vim.g.loaded_netrwPlugin = 0
 vim.g.loaded_matchit = 0
 vim.g.loaded_matchparen = 0
 vim.g.loaded_spec = 0
+vim.g.undodir = "/home/nathias/.vim/undodir"
+vim.cmd[[colorscheme spacemacs-theme]]
 
 local M = {}
 
