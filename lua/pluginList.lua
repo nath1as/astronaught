@@ -23,8 +23,12 @@ return packer.startup(
             end
         }
 
+        use "dietsche/vim-lastplace"
+        use "godlygeek/csapprox"
+
         -- color related stuff
         use "siduck76/nvim-base16.lua"
+        use "colepeters/spacemacs-theme.vim"
 
         use {
             "norcalli/nvim-colorizer.lua",
