@@ -1,7 +1,6 @@
 -- load all plugins
 require "pluginList"
 require "options"
-require "plugins.bufferline"
 
 local g = vim.g
 
