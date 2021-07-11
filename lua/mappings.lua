@@ -69,6 +69,10 @@ map("i", "<CR>", "v:lua.completions()", {expr = true})
 -- nvimtree
 map("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
 
+-- system-copy-paste
+map("v", "<C-c>", '"+y', opt)
+map("n", "<C-p>", '"+p', opt)
+
 -- format code
 map("n", "<C-i>", ":Neoformat<CR>", opt)
 
