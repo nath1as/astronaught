@@ -25,11 +25,12 @@ return packer.startup(
 
         use "dietsche/vim-lastplace"
         use "godlygeek/csapprox"
+        use 'glepnir/lspsaga.nvim'
+        use 'kabouzeid/nvim-lspinstall'
 
         -- color related stuff
         use "siduck76/nvim-base16.lua"
-        use "colepeters/spacemacs-theme.vim"
-
+	use "colepeters/spacemacs-theme.vim"
         use {
             "norcalli/nvim-colorizer.lua",
             event = "BufRead",

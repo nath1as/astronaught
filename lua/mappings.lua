@@ -12,8 +12,8 @@ local opt = {}
 map("n", "<C-a>", [[ <Cmd> %y+<CR>]], opt)
 
 -- Commenter Keybinding
-map("n", "<leader>/", ":CommentToggle<CR>", opt)
-map("v", "<leader>/", ":CommentToggle<CR>", opt)
+map("n", "<C-\\>", ":CommentToggle<CR>", opt)
+map("v", "<C-\\>", ":CommentToggle<CR>", opt)
 
 -- compe stuff
 local t = function(str)
