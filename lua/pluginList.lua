@@ -26,11 +26,11 @@ return packer.startup(
         use "dietsche/vim-lastplace"
         use "godlygeek/csapprox"
         use 'glepnir/lspsaga.nvim'
-        use 'kabouzeid/nvim-lspinstall'
 
         -- color related stuff
+        use "ap/vim-css-color"
         use "siduck76/nvim-base16.lua"
-	use "colepeters/spacemacs-theme.vim"
+	use "nath1as/astronaught"
         use {
             "norcalli/nvim-colorizer.lua",
             event = "BufRead",
@@ -48,9 +48,7 @@ return packer.startup(
                 require("plugins.treesitter").config()
             end
         }
-
         use "kabouzeid/nvim-lspinstall"
-
         use {
             "neovim/nvim-lspconfig",
             event = "BufRead",
@@ -58,7 +56,6 @@ return packer.startup(
                 require("plugins.lspconfig").config()
             end
         }
-
         use {
             "onsails/lspkind-nvim",
             event = "BufRead",
@@ -87,7 +84,6 @@ return packer.startup(
                 "rafamadriz/friendly-snippets"
             }
         }
-
         use {"sbdchd/neoformat", cmd = "Neoformat"}
 
         -- file managing , picker etc
@@ -98,14 +94,12 @@ return packer.startup(
                 require("plugins.nvimtree").config()
             end
         }
-
         use {
             "kyazdani42/nvim-web-devicons",
             config = function()
                 require("plugins.icons").config()
             end
         }
-
         use "nvim-lua/plenary.nvim"
 
         -- git stuff
@@ -131,9 +125,7 @@ return packer.startup(
                 )
             end
         }
-
         use {"andymass/vim-matchup", event = "CursorMoved"}
-
         use {
             "terrortylor/nvim-comment",
             cmd = "CommentToggle",
@@ -141,10 +133,7 @@ return packer.startup(
                 require("nvim_comment").setup()
             end
         }
-
         use {"tweekmonster/startuptime.vim", cmd = "StartupTime"}
-
-        -- smooth scroll
         use {
             "karb94/neoscroll.nvim",
             event = "WinScrolled",
@@ -152,9 +141,7 @@ return packer.startup(
                 require("neoscroll").setup()
             end
         }
-
         use "alvan/vim-closetag"
-
         use {
             "lukas-reineke/indent-blankline.nvim",
             event = "BufRead",

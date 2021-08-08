@@ -14,7 +14,7 @@ local colors = {
     baby_pink = "#dd75dd",
     pink = "#d75f87",
     line = "#2c2f30", -- for lines like vertsplit
-    green = "#875faf",
+    green = "#20ad80",
     vibrant_green = "#20ad80",
     nord_blue = "#4f97d7",
     blue = "#4f97d7",
@@ -25,7 +25,7 @@ local colors = {
     teal = "#20ad80",
     orange = "#e78a4e",
     cyan = "#20ad80",
-    statusline_bg = "#875faf",
+    statusline_bg = "#1c1c1c",
     lightbg = "#333",
     lightbg2 = "#333"
 }
