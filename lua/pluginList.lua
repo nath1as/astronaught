@@ -15,14 +15,12 @@ packer.init {
 return packer.startup(
     function()
         use "wbthomason/packer.nvim"
-
         use {
             "glepnir/galaxyline.nvim",
             config = function()
                 require("plugins.statusline").config()
             end
         }
-
         use "dietsche/vim-lastplace"
         use "godlygeek/csapprox"
         use 'glepnir/lspsaga.nvim'
@@ -31,6 +29,17 @@ return packer.startup(
         use "ap/vim-css-color"
         use "siduck76/nvim-base16.lua"
 	use "folke/tokyonight.nvim"
+        use {
+          "folke/trouble.nvim",
+          requires = "kyazdani42/nvim-web-devicons",
+          config = function()
+          require("trouble").setup {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+          }
+         end
+        }
         use {
             "norcalli/nvim-colorizer.lua",
             event = "BufRead",
