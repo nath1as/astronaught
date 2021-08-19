@@ -30,7 +30,7 @@ return packer.startup(
         -- color related stuff
         use "ap/vim-css-color"
         use "siduck76/nvim-base16.lua"
-	use "nath1as/astronaught-theme"
+	use "folke/tokyonight.nvim"
         use {
             "norcalli/nvim-colorizer.lua",
             event = "BufRead",

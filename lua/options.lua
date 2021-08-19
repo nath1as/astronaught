@@ -14,10 +14,10 @@ opt.updatetime = 250 -- update interval for gitsigns
 opt.timeoutlen = 200
 opt.clipboard = "unnamedplus"
 
--- Numbers
+-- numbers
 opt.number = true
 opt.numberwidth = 2
--- opt.relativenumber = true
+opt.relativenumber = true
 
 -- for indenline
 opt.expandtab = true
@@ -36,7 +36,18 @@ vim.g.loaded_matchit = 0
 vim.g.loaded_matchparen = 0
 vim.g.loaded_spec = 0
 vim.g.undodir = "/home/nathias/.vim/undodir"
-vim.cmd[[colorscheme astronaught-theme]]
+
+-- colorscheme settings
+vim.cmd[[colorscheme tokyonight]]
+vim.g.tokyonight_style = "night"
+vim.g.tokyonight_transparent = true
+vim.g.tokyonight_italic_keywords = true
+vim.g.tokyonight_italic_comments = true
+vim.g.tokyonight_italic_functions = true
+vim.g.tokyonight_italic_variables = false
+vim.g.tokyonight_transparent_sidebar = true
+vim.g.tokyonight_lualine_bold = true
+
 
 local M = {}
 
