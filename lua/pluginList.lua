@@ -119,7 +119,26 @@ return packer.startup(
                 require("plugins.gitsigns").config()
             end
         }
-
+        -- neorgmode
+	use { 
+            "vhyrro/neorg",
+                config = function()
+                    require('neorg').setup {
+                        load = {
+                            ["core.defaults"] = {},
+                            ["core.norg.concealer"] = {},
+                            ["core.norg.dirman"] = { 
+                                config = {
+                                    workspaces = {
+                                        my_workspace = "~/.neorg"
+                                    }
+                                }
+                            }
+                        },
+                    }
+                end,
+            requires = "nvim-lua/plenary.nvim"
+        }
         -- misc plugins
         use {
             "windwp/nvim-autopairs",
