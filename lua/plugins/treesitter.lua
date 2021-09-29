@@ -12,6 +12,7 @@ M.config = function()
             "css",
             "bash",
             "lua",
+            "vim",
             "json",
             "python",
             "ruby",
@@ -19,7 +20,7 @@ M.config = function()
             "c",
             "regex",
             "latex",
-            "nix"
+            "nix",
         },
         highlight = {
             enable = true,
