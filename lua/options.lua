@@ -38,7 +38,7 @@ vim.g.loaded_spec = 0
 vim.g.undodir = "/home/nathias/.vim/undodir"
 
 -- colorscheme settings
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd [[colorscheme tokyonight]]
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_transparent = true
 vim.g.tokyonight_italic_keywords = true
@@ -48,17 +48,16 @@ vim.g.tokyonight_italic_variables = false
 vim.g.tokyonight_transparent_sidebar = true
 vim.g.tokyonight_lualine_bold = true
 
-
 local M = {}
 
 function M.is_buffer_empty()
-    -- Check whether the current buffer is empty
-    return vim.fn.empty(vim.fn.expand("%:t")) == 1
+   -- Check whether the current buffer is empty
+   return vim.fn.empty(vim.fn.expand "%:t") == 1
 end
 
 function M.has_width_gt(cols)
-    -- Check if the windows width is greater than a given number of columns
-    return vim.fn.winwidth(0) / 2 > cols
+   -- Check if the windows width is greater than a given number of columns
+   return vim.fn.winwidth(0) / 2 > cols
 end
 
 -- file extension specific tabbing

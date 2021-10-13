@@ -101,30 +101,11 @@ return packer.startup(function()
    }
 
    -- git stuff
-   use {
-      "lewis6991/gitsigns.nvim",
-      disable = not status.gitsigns,
-      opt = true,
-      config = override_req("gitsigns", "plugins.configs.gitsigns"),
-      setup = function()
-         require("core.utils").packer_lazy_load "gitsigns.nvim"
-      end,
-   }
+   use { "lewis6991/gitsigns.nvim"}
 
    -- lsp stuff
 
-   use {
-      "neovim/nvim-lspconfig",
-      opt = true,
-      setup = function()
-         require("core.utils").packer_lazy_load "nvim-lspconfig"
-         -- reload the current file so lsp actually starts for it
-         vim.defer_fn(function()
-            vim.cmd 'if &ft == "packer" | echo "" | else | silent! e %'
-         end, 0)
-      end,
-      config = override_req("lspconfig", "plugins.configs.lspconfig"),
-   }
+   use { "neovim/nvim-lspconfig"}
 
    use {
       "ray-x/lsp_signature.nvim",
